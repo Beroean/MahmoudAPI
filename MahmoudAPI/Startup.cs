@@ -33,7 +33,7 @@ namespace MahmoudAPI
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                                   builder =>
                                   {
-                                      builder.WithOrigins("https://react-app-mahmoud.herokuapp.com",
+                                      builder.WithOrigins("https://mahmoud-shaar.herokuapp.com/",
                                           "http://localhost:3000");
                                   });
             });
