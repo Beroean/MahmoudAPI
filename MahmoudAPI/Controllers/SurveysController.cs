@@ -80,6 +80,7 @@ namespace MahmoudAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<Survey>> PostSurvey(Survey survey)
         {
+            survey.SurveyDate = DateTime.Now;
             _context.Survey.Add(survey);
             await _context.SaveChangesAsync();
 

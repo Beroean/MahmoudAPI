@@ -36,7 +36,8 @@ namespace MahmoudAPI
                                   builder =>
                                   {
                                       builder.WithOrigins("https://mahmoud-shaar.herokuapp.com",
-                                          "http://localhost:3000");
+                                          "http://localhost:3000")
+                                      .AllowAnyHeader();
                                   });
             });
             services.AddDbContext<MahmoudAppContext>(options =>
